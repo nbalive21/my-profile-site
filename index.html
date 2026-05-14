@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>김수호 · Suho Kim</title>
+  <meta name="description" content="김수호 — 웹개발자 · 제조업 IT 담당자 포트폴리오" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loading">
+    <span>LOADING EARTH</span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+  </div>
+
+  <canvas id="earth-canvas"></canvas>
+
+  <nav class="top-nav">
+    <div class="brand">SUHO · KIM</div>
+    <ul class="nav-links">
+      <li><button data-target="about">About</button></li>
+      <li><button data-target="skills">Skills</button></li>
+      <li><button data-target="career">Career</button></li>
+      <li><button data-target="projects">Projects</button></li>
+      <li><button data-target="contact">Contact</button></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about" class="section glass">
+      <div class="eyebrow">PROFILE · 2026</div>
+      <h1>안녕하세요,<br/><span class="accent">김수호</span>입니다.</h1>
+      <span class="role-tag">웹개발자 · 제조업 IT 담당자</span>
+      <p style="margin-top:20px;">
+        현재 10년차 IT 전공자로서 Claude Code를 통해 다양한 프로젝트와
+        앱, 인공지능, AX, DX 등 신기술을 접하고 활용하고 싶은 엔지니어입니다.
+      </p>
+      <p style="font-size:0.85rem; color:rgba(203,213,225,0.7); margin-top:12px;">
+        지구를 자유롭게 회전하고 확대/축소해 보세요. 상단 메뉴로 각 섹션을 탐색할 수 있습니다.
+      </p>
+    </section>
+
+    <section id="skills" class="section glass">
+      <div class="eyebrow">TECH STACK</div>
+      <h2>다루는 기술</h2>
+
+      <div class="skill-group">
+        <h3>Backend / Infra</h3>
+        <div class="skill-pills">
+          <span class="pill">Spring Boot</span>
+          <span class="pill">Java</span>
+          <span class="pill">Azure</span>
+          <span class="pill">AWS</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="skill-pills">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">jQuery</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Manufacturing IT</h3>
+        <div class="skill-pills">
+          <span class="pill">ERP</span>
+          <span class="pill">MES</span>
+          <span class="pill">S&amp;OP</span>
+          <span class="pill">APS</span>
+          <span class="pill">QMS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⚠️ Career timeline: 연도/내용은 placeholder. 실제 경력으로 교체하세요. -->
+    <section id="career" class="section glass">
+      <div class="eyebrow">JOURNEY</div>
+      <h2>경력 타임라인</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2015</div>
+          <div class="timeline-text">IT 커리어 시작 — 웹 개발 (HTML, CSS, JS, jQuery)</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2018</div>
+          <div class="timeline-text">제조업 IT 시스템 운영 — ERP / MES 도입 및 유지보수</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2021</div>
+          <div class="timeline-text">클라우드 전환 프로젝트 — Azure / AWS 인프라 구축</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-text">AI · AX · DX 신기술 도입, Claude Code 기반 자동화 실험</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⚠️ Sample projects: 가상의 샘플입니다. 실제 프로젝트로 교체하세요. -->
+    <section id="projects" class="section glass">
+      <div class="eyebrow">WORK</div>
+      <h2>프로젝트 / 포트폴리오</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-icon">🏭</div>
+          <div class="project-title">스마트 팩토리 MES 대시보드</div>
+          <div class="project-desc">실시간 생산 라인 모니터링 및 KPI 시각화 시스템.</div>
+          <div class="project-tech">
+            <span>Spring Boot</span><span>Azure</span><span>MES</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🔗</div>
+          <div class="project-title">ERP–MES 통합 인터페이스</div>
+          <div class="project-desc">생산 실적과 자재 데이터를 자동 동기화하는 미들웨어.</div>
+          <div class="project-tech">
+            <span>Java</span><span>AWS</span><span>ERP</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🤖</div>
+          <div class="project-title">S&amp;OP 수요예측 AI 모듈</div>
+          <div class="project-desc">머신러닝 기반 수요 시계열 예측과 APS 연동.</div>
+          <div class="project-tech">
+            <span>Python</span><span>Claude Code</span><span>APS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">📊</div>
+          <div class="project-title">QMS 품질 대시보드</div>
+          <div class="project-desc">품질 검사 데이터의 실시간 차트 및 알림 시스템.</div>
+          <div class="project-tech">
+            <span>JavaScript</span><span>jQuery</span><span>QMS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section glass">
+      <div class="eyebrow">GET IN TOUCH</div>
+      <h2>연락처</h2>
+      <p>새로운 프로젝트, 협업, 신기술에 대한 이야기를 환영합니다.</p>
+
+      <a class="contact-btn" href="mailto:nbalive21@naver.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+          <path d="m3 7 9 6 9-6"></path>
+        </svg>
+        nbalive21@naver.com
+      </a>
+
+      <!-- ⚠️ GitHub / LinkedIn URL placeholder — 실제 주소로 교체하세요. -->
+      <div class="socials">
+        <a href="#" aria-label="GitHub" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.13c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .97-.31 3.18 1.17a11 11 0 0 1 5.79 0c2.2-1.48 3.17-1.17 3.17-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.65.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43A2.06 2.06 0 1 1 5.34 3.3a2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="hint" class="hint">🖱 Drag to rotate · Scroll to zoom</div>
+
+  <script type="module" src="earth.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
